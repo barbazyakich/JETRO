@@ -1,0 +1,252 @@
+@import fonts.sass
+@import vars.sass
+
+*
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+
+body
+    font-family: $bebas
+    font-size: 16px
+    color: $dark
+
+ul, li, a
+    list-style: none
+    text-decoration: none
+    margin: 0
+    padding: 0
+    color: inherit
+
+.container
+    max-width: 960px
+    padding: 0 15px
+    margin: 0 auto
+
+.header
+    &__menu-btn
+        display: none
+        cursor: pointer
+    &__menu-row
+        height: 4px
+        width: 28px
+        margin-bottom: 4px
+        background-color: $dark
+        border-radius: 5px
+        &:last-child
+            margin-bottom: 0
+    &__inner
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 78px
+    &__list
+        display: flex
+        &-item + &-item
+            margin-left: 24px
+        &-link
+            color: $light
+            transition: all .3s ease
+            &:hover
+                color: $orange
+
+.slider
+    color: #fff
+    position: relative
+    margin-bottom: 40px
+    &__strip
+        position: absolute
+        display: flex
+        justify-content: space-between
+        width: 100%
+        top: 0
+        &-left
+            background: $pink
+            height: 60px
+            width: 5%
+        &-right
+            background: $pink
+            height: 60px
+            width: 5%
+    &__item
+        height: 400px
+        padding-top: 245px
+        padding-left: 36px
+        position: relative
+        background-repeat: no-repeat
+        background-position: top center
+        background-size: cover
+    &__inner
+        width: 413px
+        background: $orange
+        opacity: 0.8
+        padding: 20px 24px 18px 24px
+    &__title
+        font-size: 18px
+        margin-bottom: 18px
+    &__text
+        font-family: $helvetica
+        font-size: 12px
+    &__box
+        margin-bottom: 18px
+.thumbs__item
+    max-width: 140px !important
+    height: 120px
+    margin-left: 18px
+    background-repeat: no-repeat
+    background-position: top center
+    background-size: cover
+    &:first-child
+        margin-left: 0
+.thumbs__box .slick-track
+    transform: translate3d(0px, 0px, 0px) !important
+.slick-arrow
+    font-size: 0
+    border: none
+    height: 52px
+    width: 34px
+    background: none
+    position: absolute
+    top: 40%
+.slick-prev
+    background-image: url(../img/icons/prev-arrow.svg)
+    z-index: 1
+    left: 23px
+.slick-next
+    background-image: url(../img/icons/next-arrow.svg)
+    right: 23px
+
+.items
+    margin-bottom: 54px
+    &__inner
+        display: flex
+        justify-content: space-between
+    &__item
+        max-width: 277px
+    &__title
+        font-size: 18px
+        line-height: 24px
+        color: $orange
+        padding-top: 3px
+        padding-left: 68px
+        margin-bottom: 36px
+        max-width: 240px
+        position: relative
+    &__icon
+        position: absolute
+        top: 0
+        left: 0
+
+    &__text
+        font-size: 12px
+        line-height: 18px
+        font-family: $helvetica
+        margin-bottom: 30px
+    &__button
+        color: #fff
+        font-size: 12px
+        padding: 9px 14px 9px 12px
+        background-color: $orange
+
+.works
+    margin-bottom: 48px
+    &__title
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-bottom: 24px
+        &-line
+            width: 80%
+        &-text
+            font-size: 18px
+            color: $orange
+    &__inner
+        display: flex
+        justify-content: space-between
+    &__item
+        max-width: 220px
+    &__image
+        display: block
+    &__bottom
+        border: 1px solid $light
+        border-top: none
+        padding: 12px 12px 12px
+    &__item-title
+        font-size: 16px
+        line-height: 18px
+        color: $light
+        margin-bottom: 6px
+    &__date
+        font-size: 11px
+        color: $orange
+
+.footer
+    color: #fff
+    position: relative
+    &__strip
+        position: absolute
+        display: flex
+        justify-content: space-between
+        width: 100%
+        top: 0
+        &-left
+            background: $pink
+            height: 265px
+            width: 5%
+        &-right
+            background: $pink
+            height: 265px
+            width: 5%
+    &__inner
+        display: flex
+        justify-content: space-between
+        background-color: $orange
+        padding: 38px 40px 33px 34px
+    &__about
+        max-width: 265px
+        &-title
+            font-size: 20px
+            margin-bottom: 26px
+        &-text
+            font-size: 12px
+            font-family: $helvetica
+            span
+                display: block
+                margin-top: 17px
+    &__twitter
+        max-width: 220px
+        &-title
+            font-size: 20px
+            margin-bottom: 26px
+        &-item
+            font-size: 12px
+            line-height: 14px
+            font-family: $helvetica
+            margin-bottom: 17px
+        &-comm
+            margin-bottom: 6px
+            span
+                color: $light
+        &-date
+            color: $light
+        &-end
+            font-size: 12px
+            font-family: $helvetica
+            span
+                color: $light
+    &__contact
+        max-width: 255px
+        &-title
+            font-size: 20px
+            margin-bottom: 26px
+        &-text
+            font-size: 12px
+            font-family: $helvetica
+            margin-bottom: 26px
+            span
+                display: block
+                margin-top: 17px
+        &-img
+            margin-left: 5px
+            &:first-child
+                margin-left: 0
